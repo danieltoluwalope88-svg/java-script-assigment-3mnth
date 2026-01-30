@@ -43,3 +43,25 @@ console.log(canEnterVenue(15, false, true));
 
 //question 3//
 
+
+
+
+
+//question 4//
+function calculateTax(price, taxRate) {
+  return price + (price * taxRate);
+}
+
+function formatPrice(amount) {
+  return "$" + amount.toFixed(2);
+}
+
+function processOrder(price, quantity, taxRate) {
+  const subtotal = price * quantity;
+  const totalWithTax = calculateTax(subtotal, taxRate);
+  return formatPrice(totalWithTax);
+}
+
+
+
+
